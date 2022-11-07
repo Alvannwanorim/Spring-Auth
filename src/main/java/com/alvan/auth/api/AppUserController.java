@@ -10,15 +10,22 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alvan.auth.entity.AppUser;
 import com.alvan.auth.service.AppUserService;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
+/**
+ * 
+ */
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
 public class AppUserController {
     private final AppUserService appUserService;
 
+    /**
+     * 
+     * @param: none
+     * @return users
+     */
     @GetMapping("/users")
     public ResponseEntity<List<AppUser>>getUsers(){
         return ResponseEntity.ok().body(appUserService.getUsers());
