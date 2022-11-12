@@ -24,28 +24,28 @@ public class AuthApplication {
 	PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-	@Bean
-	CommandLineRunner run(AppUserService appUserService){
-		return args ->{
-			// appUserService.saveRole(new Role(null, "ROLE_USER"));
-			// appUserService.saveRole(new Role(null, "ROLE_MANAGER"));
-			// appUserService.saveRole(new Role(null, "ROLE_ADMIN"));
-			// appUserService.saveRole(new Role(null, "ROLE_SUPERADMIN"));
+	// @Bean
+	// CommandLineRunner run(AppUserService appUserService){
+	// 	return args ->{
+	// 		appUserService.saveRole(new Role(null, "ROLE_USER"));
+	// 		appUserService.saveRole(new Role(null, "ROLE_MANAGER"));
+	// 		appUserService.saveRole(new Role(null, "ROLE_ADMIN"));
+	// 		appUserService.saveRole(new Role(null, "ROLE_SUPERADMIN"));
 
-			// appUserService.saveUser(new AppUser(null,"Alvan", "alvan@gmail.com", "123456",new ArrayList<>()));
-			// appUserService.saveUser(new AppUser(null,"John", "john@gmail.com" ,"123456",new ArrayList<>()));
-			// appUserService.saveUser(new AppUser(null,"Mike", "mike@gmail.com" ,"123456",new ArrayList<>()));
-			// appUserService.saveUser(new AppUser(null,"Caleb", "caleb@gmail.com" ,"123456",new ArrayList<>()));
+	// 		appUserService.saveUser(new AppUser(null,"Alvan", "alvan@gmail.com", "123456",new ArrayList<>()));
+	// 		appUserService.saveUser(new AppUser(null,"John", "john@gmail.com" ,"123456",new ArrayList<>()));
+	// 		appUserService.saveUser(new AppUser(null,"Mike", "mike@gmail.com" ,"123456",new ArrayList<>()));
+	// 		appUserService.saveUser(new AppUser(null,"Caleb", "caleb@gmail.com" ,"123456",new ArrayList<>()));
 
-			// appUserService.addRoleToAppUser("john@gmail.com", "ROLE_USER");
-			// appUserService.addRoleToAppUser("john@gmail.com", "ROLE_MANAGER");
-			// appUserService.addRoleToAppUser("mike@gmail.com", "ROLE_USER");
-			// appUserService.addRoleToAppUser("caleb@gmail.com", "ROLE_MANAGER");
-			// appUserService.addRoleToAppUser("caleb@gmail.com", "ROLE_USER");
-			// appUserService.addRoleToAppUser("alvan@gmail.com", "ROLE_USER");
-			// appUserService.addRoleToAppUser("alvan@gmail.com", "ROLE_SUPERADMIN");
-			// appUserService.addRoleToAppUser("alvan@gmail.com", "ROLE_ADMIN");
+	// 		appUserService.addRoleToAppUser("john@gmail.com", "ROLE_USER");
+	// 		appUserService.addRoleToAppUser("john@gmail.com", "ROLE_MANAGER");
+	// 		appUserService.addRoleToAppUser("mike@gmail.com", "ROLE_USER");
+	// 		appUserService.addRoleToAppUser("caleb@gmail.com", "ROLE_MANAGER");
+	// 		appUserService.addRoleToAppUser("caleb@gmail.com", "ROLE_USER");
+	// 		appUserService.addRoleToAppUser("alvan@gmail.com", "ROLE_USER");
+	// 		appUserService.addRoleToAppUser("alvan@gmail.com", "ROLE_SUPERADMIN");
+	// 		appUserService.addRoleToAppUser("alvan@gmail.com", "ROLE_ADMIN");
 			
-		};
-	}
+	// 	};
+	// }
 }
